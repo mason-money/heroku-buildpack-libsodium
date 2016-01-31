@@ -37,5 +37,7 @@ fi
 
 echo -n "-----> Copying libsodium ($VERSION)... "
 mkdir -p $BUILD_PATH/lib
+mkdir -p $BUILD_PATH/include
 cp -rf $CACHE_PATH/$SODIUM_DIR/src/libsodium/.libs/* $BUILD_PATH/lib
+cp -rf $CACHE_PATH/$SODIUM_DIR/src/libsodium/include/* $BUILD_PATH/include
 echo "done"
